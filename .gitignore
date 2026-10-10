@@ -1,0 +1,14 @@
+dist/
+site.tar.gz
+
+# Local credentials
+.env
+.env.*
+.dev.vars
+!.env.example
+
+node_modules/
+dist/
+.sites-runtime/
+.openai/
+*.log

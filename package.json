@@ -1,0 +1,25 @@
+{
+  "name": "precalculus-graph-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An AI precalculus tutor with verified graphing tools.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env.local server.js",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.js",
+    "smoke": "node --env-file-if-exists=.env.local scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "@openai/agents": "0.20.0",
+    "openai": "latest",
+    "zod": "^4.0.0",
+    "mathjs": "^15.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.11"
+  }
+}
